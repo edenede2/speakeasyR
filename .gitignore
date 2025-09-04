@@ -9,3 +9,5 @@ autom4te.cache/
 configure~
 !tools/config.*
 aclocal.m4
+
+*.env
