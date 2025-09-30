@@ -3,6 +3,17 @@
 ## Add
 
 - Support for `LongVector`s for graphs with more than 2 ^ 31 edges.
+- Test for full weighted graph.
+
+## Changed
+
+- Update libSE2 to 0.1.13 (improves performance and error handling) and subsequently igraph to 1.0.0
+- Write C constructors to directly convert R SEXP types to SE2 types without having to go through igraph data type as an intermediate. Especially in weighted full graphs, this reduces memory requirements by a scalar factor and reduces the time it takes to perform the conversion.
+
+## Fixed
+
+- In `cluster_genes` fix directedness of a symmetric correlation matrix.
+- Printing in C files. Previously was adding extra linebreaks.
 
 # speakeasyR 0.1.7
 
