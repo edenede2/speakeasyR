@@ -11,3 +11,4 @@ configure~
 aclocal.m4
 
 *.env
+SLabPL/*csv
